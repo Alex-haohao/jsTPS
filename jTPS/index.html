@@ -1,0 +1,102 @@
+
+
+<!doctype html>
+<html>
+
+    <head>
+        <title>Unit_test</title>
+        <script type="module" src="./test/demo/jTPSUNIT.js">
+        </script>
+        <script type="module" src="./test/demo/jtps_tester_js.js">
+        </script>
+    </head>
+    <body>
+
+            <p >Test ADD: init test</p>
+            <p id="init"></p>
+
+            <p >ADD 5 TRANSACTION</p>
+            <p id="add_five"></p>
+
+            <p >ADD 10 TRANSACTION</p>
+            <p id="add10"></p>
+
+            <p >ADD 15 TRANSACTION</p>
+            <p id="add15"></p>
+
+            <p >TestAndMask: init test</p>
+            <p id="initmask"></p>
+            
+            <p >ADD 5 TRANSACTION</p>
+            <p id="add_five_maskand"></p>
+
+            <p >testUndo: init</p>
+            <p id="inittestUndo"></p>
+
+            <p >testUndo: ADD 3 TRANSACTIONS (5, 10, and 15)</p>
+            <p id="testaddthree"></p>
+
+            <p >testUndo: UNDO A TRANSACTION</p>
+            <p id="testUNDOaTRANSACTION"></p>
+
+            <p >testUndo: UNDO ANOTHER</p>
+            <p id="testUNDO_ANOTHER"></p>
+
+            <p >testUndo: AND ANOTHER</p>
+            <p id="testAND_ANOTHER"></p>
+
+            <p >testUndo: WE HAVE NO MORE TO UNDO SO THIS SHOULD DO NOTHING</p>
+            <p id="testNO_more_undo"></p>
+
+            <p >testtestRedo: init</p>
+            <p id="testtestRedo_init"></p>
+
+            <p >testtestRedo: ADD 3 TRANSACTIONS (5, 10, and 15)</p>
+            <p id="testtestRedo_addthree"></p>
+
+            <p >testtestRedo: UNDO A TRANSACTION AND THEN REDO IT</p>
+            <p id="testtestUndothenredo"></p>
+
+            <p >testtestRedo: UNDO TWO TRANSACTIONS AND THEN REDO THEM</p>
+            <p id="testtestUndothenredothem"></p>
+            
+            <p >testtestRedo: UNDO ALL THREE TRANSACTIONS AND REDO THEM</p>
+            <p id="testtestUndoAllthenredothem"></p>
+            
+            <p >testtestRedo: UNDO THREE TRANSACTIONS AND REDO TWO</p>
+            <p id="testtestUndothreethenredotwo"></p>
+
+            <p >testtestRedo: UNDO ALL THREE TRANSACTIONS AND REDO FOUR, WHICH
+                     SHOULD NOT PRODUCE AN ERROR BUT THE LAST
+                     REDO SHOULD DO NOTHING</p>
+            <p id="testtestUndothreethenredofour"></p>
+            
+            <p >testClear: init</p>
+            <p id="testClear_init"></p>
+
+            <p >testClear: DD 3 TRANSACTIONS (5, 10, and 15)</p>
+            <p id="testClear_Dothree"></p>
+            
+            <p >testClear: CLEAR ALL THE TRANSACTIONS</p>
+            <p id="testClear_all"></p>
+
+            <p >testClear: ADD 3 TRANSACTIONS (5, 10, and 15)</p>
+            <p id="testClear_addthree"></p>
+            
+            <p >testClear: CLEAR THEM ALL OUT AGAIN</p>
+            <p id="testClear_all_agian"></p>
+
+            <p >testClear: ADD 3 TRANSACTIONS (5, 10, and 15)</p>
+            <p id="testClear_addthreeagain"></p>
+            
+            <p >TestORMask: init test</p>
+            <p id="initormask"></p>
+            
+            <p >ADD 5 TRANSACTION</p>
+            <p id="add_five_ormaskand"></p>
+
+    </body>
+
+
+
+</html>
